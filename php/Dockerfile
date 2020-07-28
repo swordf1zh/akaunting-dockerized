@@ -5,5 +5,5 @@ RUN echo "START----------------------------------------------------------------"
   && mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini" \
   && apt-get update \
   && apt-get install -y libzip-dev libpng-dev \
-  && docker-php-ext-install bcmath gd zip \
+  && docker-php-ext-install bcmath gd mysqli zip \
   && echo "-----------------------------------------------------------------END"
